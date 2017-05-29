@@ -5,7 +5,7 @@ In this RTOS implementation of mine I have basically three parts osHeader.h, os.
 3. **main.c** :- In this I have created a basic implementation with two tasks whose task is to blink led. 
 
 ## osHeader.h
-In this firsr of all I have made a tasktable which stores various tasks their priorties, ready bit and task id. Here is the code for that :-
+In this first of all I have made a tasktable which stores various tasks their priorties, ready bit and task id. Here is the code for that :-
 ```C
 struct TaskTable
 {
