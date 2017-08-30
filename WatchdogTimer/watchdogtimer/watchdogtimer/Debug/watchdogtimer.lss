@@ -1,0 +1,574 @@
+
+watchdogtimer.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000030  00800100  000002ce  00000362  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000002ce  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000001  00800130  00800130  00000392  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00000392  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  000003c4  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 000000f0  00000000  00000000  00000400  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00001333  00000000  00000000  000004f0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000bae  00000000  00000000  00001823  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   000009f0  00000000  00000000  000023d1  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  000001a0  00000000  00000000  00002dc4  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000555  00000000  00000000  00002f64  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    0000072c  00000000  00000000  000034b9  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 000000c8  00000000  00000000  00003be5  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	60 c0       	rjmp	.+192    	; 0xc6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	5e c0       	rjmp	.+188    	; 0xc6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	5c c0       	rjmp	.+184    	; 0xc6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	5a c0       	rjmp	.+180    	; 0xc6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	58 c0       	rjmp	.+176    	; 0xc6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	56 c0       	rjmp	.+172    	; 0xc6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	54 c0       	rjmp	.+168    	; 0xc6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	52 c0       	rjmp	.+164    	; 0xc6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	50 c0       	rjmp	.+160    	; 0xc6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	4e c0       	rjmp	.+156    	; 0xc6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	4c c0       	rjmp	.+152    	; 0xc6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	4a c0       	rjmp	.+148    	; 0xc6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	48 c0       	rjmp	.+144    	; 0xc6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	46 c0       	rjmp	.+140    	; 0xc6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	44 c0       	rjmp	.+136    	; 0xc6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	42 c0       	rjmp	.+132    	; 0xc6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	40 c0       	rjmp	.+128    	; 0xc6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	3e c0       	rjmp	.+124    	; 0xc6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	3c c0       	rjmp	.+120    	; 0xc6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	3a c0       	rjmp	.+116    	; 0xc6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	38 c0       	rjmp	.+112    	; 0xc6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	36 c0       	rjmp	.+108    	; 0xc6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	34 c0       	rjmp	.+104    	; 0xc6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	32 c0       	rjmp	.+100    	; 0xc6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	30 c0       	rjmp	.+96     	; 0xc6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	2e c0       	rjmp	.+92     	; 0xc6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	2c c0       	rjmp	.+88     	; 0xc6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	2a c0       	rjmp	.+84     	; 0xc6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	28 c0       	rjmp	.+80     	; 0xc6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	26 c0       	rjmp	.+76     	; 0xc6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	24 c0       	rjmp	.+72     	; 0xc6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	22 c0       	rjmp	.+68     	; 0xc6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	20 c0       	rjmp	.+64     	; 0xc6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	1e c0       	rjmp	.+60     	; 0xc6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	ee ec       	ldi	r30, 0xCE	; 206
+  a0:	f2 e0       	ldi	r31, 0x02	; 2
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a0 33       	cpi	r26, 0x30	; 48
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+
+000000b2 <__do_clear_bss>:
+  b2:	21 e0       	ldi	r18, 0x01	; 1
+  b4:	a0 e3       	ldi	r26, 0x30	; 48
+  b6:	b1 e0       	ldi	r27, 0x01	; 1
+  b8:	01 c0       	rjmp	.+2      	; 0xbc <.do_clear_bss_start>
+
+000000ba <.do_clear_bss_loop>:
+  ba:	1d 92       	st	X+, r1
+
+000000bc <.do_clear_bss_start>:
+  bc:	a1 33       	cpi	r26, 0x31	; 49
+  be:	b2 07       	cpc	r27, r18
+  c0:	e1 f7       	brne	.-8      	; 0xba <.do_clear_bss_loop>
+  c2:	8a d0       	rcall	.+276    	; 0x1d8 <main>
+  c4:	02 c1       	rjmp	.+516    	; 0x2ca <_exit>
+
+000000c6 <__bad_interrupt>:
+  c6:	9c cf       	rjmp	.-200    	; 0x0 <__vectors>
+
+000000c8 <led_test_m_config>:
+#include "led_tests.h"
+#include "uart.h"
+#include <avr/io.h>
+
+void led_test_m_config(void)
+{
+  c8:	cf 93       	push	r28
+  ca:	df 93       	push	r29
+	DDRA=0x0F;
+  cc:	cf e0       	ldi	r28, 0x0F	; 15
+  ce:	ca bb       	out	0x1a, r28	; 26
+	
+	transmit_string_UART0("_a_");
+  d0:	80 e0       	ldi	r24, 0x00	; 0
+  d2:	91 e0       	ldi	r25, 0x01	; 1
+  d4:	ee d0       	rcall	.+476    	; 0x2b2 <transmit_string_UART0>
+		
+	PORTA = 0x0F;
+  d6:	cb bb       	out	0x1b, r28	; 27
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  d8:	2f ef       	ldi	r18, 0xFF	; 255
+  da:	81 ee       	ldi	r24, 0xE1	; 225
+  dc:	94 e0       	ldi	r25, 0x04	; 4
+  de:	21 50       	subi	r18, 0x01	; 1
+  e0:	80 40       	sbci	r24, 0x00	; 0
+  e2:	90 40       	sbci	r25, 0x00	; 0
+  e4:	e1 f7       	brne	.-8      	; 0xde <led_test_m_config+0x16>
+  e6:	00 c0       	rjmp	.+0      	; 0xe8 <led_test_m_config+0x20>
+  e8:	00 00       	nop
+	_delay_ms(200);
+	PORTA = 0xF0;
+  ea:	d0 ef       	ldi	r29, 0xF0	; 240
+  ec:	db bb       	out	0x1b, r29	; 27
+  ee:	2f ef       	ldi	r18, 0xFF	; 255
+  f0:	81 ee       	ldi	r24, 0xE1	; 225
+  f2:	94 e0       	ldi	r25, 0x04	; 4
+  f4:	21 50       	subi	r18, 0x01	; 1
+  f6:	80 40       	sbci	r24, 0x00	; 0
+  f8:	90 40       	sbci	r25, 0x00	; 0
+  fa:	e1 f7       	brne	.-8      	; 0xf4 <led_test_m_config+0x2c>
+  fc:	00 c0       	rjmp	.+0      	; 0xfe <led_test_m_config+0x36>
+  fe:	00 00       	nop
+	_delay_ms(200);
+
+	transmit_string_UART0("_b_");
+ 100:	84 e0       	ldi	r24, 0x04	; 4
+ 102:	91 e0       	ldi	r25, 0x01	; 1
+ 104:	d6 d0       	rcall	.+428    	; 0x2b2 <transmit_string_UART0>
+		
+	PORTA = 0x0F;
+ 106:	cb bb       	out	0x1b, r28	; 27
+ 108:	2f ef       	ldi	r18, 0xFF	; 255
+ 10a:	81 ee       	ldi	r24, 0xE1	; 225
+ 10c:	94 e0       	ldi	r25, 0x04	; 4
+ 10e:	21 50       	subi	r18, 0x01	; 1
+ 110:	80 40       	sbci	r24, 0x00	; 0
+ 112:	90 40       	sbci	r25, 0x00	; 0
+ 114:	e1 f7       	brne	.-8      	; 0x10e <led_test_m_config+0x46>
+ 116:	00 c0       	rjmp	.+0      	; 0x118 <led_test_m_config+0x50>
+ 118:	00 00       	nop
+	_delay_ms(200);
+	PORTA = 0xF0;
+ 11a:	db bb       	out	0x1b, r29	; 27
+ 11c:	2f ef       	ldi	r18, 0xFF	; 255
+ 11e:	81 ee       	ldi	r24, 0xE1	; 225
+ 120:	94 e0       	ldi	r25, 0x04	; 4
+ 122:	21 50       	subi	r18, 0x01	; 1
+ 124:	80 40       	sbci	r24, 0x00	; 0
+ 126:	90 40       	sbci	r25, 0x00	; 0
+ 128:	e1 f7       	brne	.-8      	; 0x122 <led_test_m_config+0x5a>
+ 12a:	00 c0       	rjmp	.+0      	; 0x12c <led_test_m_config+0x64>
+	_delay_ms(200);
+	
+	transmit_string_UART0("_c_");
+ 12c:	00 00       	nop
+ 12e:	88 e0       	ldi	r24, 0x08	; 8
+ 130:	91 e0       	ldi	r25, 0x01	; 1
+	
+	PORTA = 0x0F;
+ 132:	bf d0       	rcall	.+382    	; 0x2b2 <transmit_string_UART0>
+ 134:	cb bb       	out	0x1b, r28	; 27
+ 136:	2f ef       	ldi	r18, 0xFF	; 255
+ 138:	81 ee       	ldi	r24, 0xE1	; 225
+ 13a:	94 e0       	ldi	r25, 0x04	; 4
+ 13c:	21 50       	subi	r18, 0x01	; 1
+ 13e:	80 40       	sbci	r24, 0x00	; 0
+ 140:	90 40       	sbci	r25, 0x00	; 0
+ 142:	e1 f7       	brne	.-8      	; 0x13c <led_test_m_config+0x74>
+ 144:	00 c0       	rjmp	.+0      	; 0x146 <led_test_m_config+0x7e>
+	_delay_ms(200);
+	PORTA = 0xF0;
+ 146:	00 00       	nop
+ 148:	db bb       	out	0x1b, r29	; 27
+ 14a:	2f ef       	ldi	r18, 0xFF	; 255
+ 14c:	81 ee       	ldi	r24, 0xE1	; 225
+ 14e:	94 e0       	ldi	r25, 0x04	; 4
+ 150:	21 50       	subi	r18, 0x01	; 1
+ 152:	80 40       	sbci	r24, 0x00	; 0
+ 154:	90 40       	sbci	r25, 0x00	; 0
+ 156:	e1 f7       	brne	.-8      	; 0x150 <led_test_m_config+0x88>
+	_delay_ms(200);
+	
+	transmit_string_UART0("_d_");
+ 158:	00 c0       	rjmp	.+0      	; 0x15a <led_test_m_config+0x92>
+ 15a:	00 00       	nop
+ 15c:	8c e0       	ldi	r24, 0x0C	; 12
+ 15e:	91 e0       	ldi	r25, 0x01	; 1
+	
+	PORTA = 0x0F;
+ 160:	a8 d0       	rcall	.+336    	; 0x2b2 <transmit_string_UART0>
+ 162:	cb bb       	out	0x1b, r28	; 27
+ 164:	2f ef       	ldi	r18, 0xFF	; 255
+ 166:	81 ee       	ldi	r24, 0xE1	; 225
+ 168:	94 e0       	ldi	r25, 0x04	; 4
+ 16a:	21 50       	subi	r18, 0x01	; 1
+ 16c:	80 40       	sbci	r24, 0x00	; 0
+ 16e:	90 40       	sbci	r25, 0x00	; 0
+ 170:	e1 f7       	brne	.-8      	; 0x16a <led_test_m_config+0xa2>
+ 172:	00 c0       	rjmp	.+0      	; 0x174 <led_test_m_config+0xac>
+	_delay_ms(200);
+	PORTA = 0xF0;
+ 174:	00 00       	nop
+ 176:	db bb       	out	0x1b, r29	; 27
+ 178:	2f ef       	ldi	r18, 0xFF	; 255
+ 17a:	81 ee       	ldi	r24, 0xE1	; 225
+ 17c:	94 e0       	ldi	r25, 0x04	; 4
+ 17e:	21 50       	subi	r18, 0x01	; 1
+ 180:	80 40       	sbci	r24, 0x00	; 0
+ 182:	90 40       	sbci	r25, 0x00	; 0
+ 184:	e1 f7       	brne	.-8      	; 0x17e <led_test_m_config+0xb6>
+ 186:	00 c0       	rjmp	.+0      	; 0x188 <led_test_m_config+0xc0>
+	_delay_ms(200);
+	
+	PORTA = 0x00; 
+ 188:	00 00       	nop
+ 18a:	1b ba       	out	0x1b, r1	; 27
+ 18c:	2f ef       	ldi	r18, 0xFF	; 255
+ 18e:	81 ee       	ldi	r24, 0xE1	; 225
+ 190:	94 e0       	ldi	r25, 0x04	; 4
+ 192:	21 50       	subi	r18, 0x01	; 1
+ 194:	80 40       	sbci	r24, 0x00	; 0
+ 196:	90 40       	sbci	r25, 0x00	; 0
+ 198:	e1 f7       	brne	.-8      	; 0x192 <led_test_m_config+0xca>
+ 19a:	00 c0       	rjmp	.+0      	; 0x19c <led_test_m_config+0xd4>
+	_delay_ms(200);
+	
+}
+ 19c:	00 00       	nop
+ 19e:	df 91       	pop	r29
+ 1a0:	cf 91       	pop	r28
+ 1a2:	08 95       	ret
+
+000001a4 <f>:
+#include "led_tests.h"
+#include <stdio.h>
+#include <avr/wdt.h>
+#include "timer.h"
+uint8_t wd;
+void f(void){
+ 1a4:	cf 93       	push	r28
+ 1a6:	df 93       	push	r29
+	wd=0x00;
+ 1a8:	10 92 30 01 	sts	0x0130, r1	; 0x800130 <__data_end>
+ 1ac:	c5 e0       	ldi	r28, 0x05	; 5
+ 1ae:	d0 e0       	ldi	r29, 0x00	; 0
+ 1b0:	2f ef       	ldi	r18, 0xFF	; 255
+ 1b2:	80 e7       	ldi	r24, 0x70	; 112
+ 1b4:	92 e0       	ldi	r25, 0x02	; 2
+ 1b6:	21 50       	subi	r18, 0x01	; 1
+ 1b8:	80 40       	sbci	r24, 0x00	; 0
+ 1ba:	90 40       	sbci	r25, 0x00	; 0
+ 1bc:	e1 f7       	brne	.-8      	; 0x1b6 <f+0x12>
+ 1be:	00 c0       	rjmp	.+0      	; 0x1c0 <f+0x1c>
+ 1c0:	00 00       	nop
+	for (int i=0;i<5;i++)
+	{
+		_delay_ms(100);
+		wd= wd + 0x01;
+ 1c2:	80 91 30 01 	lds	r24, 0x0130	; 0x800130 <__data_end>
+ 1c6:	8f 5f       	subi	r24, 0xFF	; 255
+ 1c8:	80 93 30 01 	sts	0x0130, r24	; 0x800130 <__data_end>
+		transmit_UART0(wd);
+ 1cc:	6e d0       	rcall	.+220    	; 0x2aa <transmit_UART0>
+#include <avr/wdt.h>
+#include "timer.h"
+uint8_t wd;
+void f(void){
+	wd=0x00;
+	for (int i=0;i<5;i++)
+ 1ce:	21 97       	sbiw	r28, 0x01	; 1
+	{
+		_delay_ms(100);
+		wd= wd + 0x01;
+		transmit_UART0(wd);
+	}
+}
+ 1d0:	79 f7       	brne	.-34     	; 0x1b0 <f+0xc>
+ 1d2:	df 91       	pop	r29
+ 1d4:	cf 91       	pop	r28
+ 1d6:	08 95       	ret
+
+000001d8 <main>:
+
+int main(void)
+{
+    init_UART0();
+    init_UART1();
+ 1d8:	3b d0       	rcall	.+118    	; 0x250 <init_UART0>
+   /* transmit_UART0(0xfa);
+    transmit_UART0(MCUCSR);
+    MCUCSR&=~(_BV(WDRF)); */
+   transmit_UART0(wd);
+ 1da:	4b d0       	rcall	.+150    	; 0x272 <init_UART1>
+ 1dc:	80 91 30 01 	lds	r24, 0x0130	; 0x800130 <__data_end>
+ 1e0:	64 d0       	rcall	.+200    	; 0x2aa <transmit_UART0>
+ 1e2:	2f ef       	ldi	r18, 0xFF	; 255
+ 1e4:	83 ed       	ldi	r24, 0xD3	; 211
+ 1e6:	90 e3       	ldi	r25, 0x30	; 48
+ 1e8:	21 50       	subi	r18, 0x01	; 1
+ 1ea:	80 40       	sbci	r24, 0x00	; 0
+ 1ec:	90 40       	sbci	r25, 0x00	; 0
+ 1ee:	e1 f7       	brne	.-8      	; 0x1e8 <main+0x10>
+    for(int xx = 0;xx<1;xx++)
+    {
+	    _delay_ms(2000);
+	    led_test_m_config();
+ 1f0:	00 c0       	rjmp	.+0      	; 0x1f2 <main+0x1a>
+    }
+    //Interrupt
+    sei();//global interrupt enable
+ 1f2:	00 00       	nop
+__attribute__ ((__always_inline__))
+void wdt_enable (const uint8_t value)
+{
+	if (_SFR_IO_REG_P (_WD_CONTROL_REG))
+	{
+		__asm__ __volatile__ (
+ 1f4:	69 df       	rcall	.-302    	; 0xc8 <led_test_m_config>
+ 1f6:	78 94       	sei
+	//wdt_disable();
+	//transmit_UART0(0xff);
+	//
+	while (1)
+	{	
+		timer_reset_two_sec(); // global reset of counter to 0 always first line of the loop
+ 1f8:	d8 e1       	ldi	r29, 0x18	; 24
+ 1fa:	cf e0       	ldi	r28, 0x0F	; 15
+ 1fc:	14 d0       	rcall	.+40     	; 0x226 <timer_reset_two_sec>
+ 1fe:	0f b6       	in	r0, 0x3f	; 63
+ 200:	f8 94       	cli
+ 202:	a8 95       	wdr
+ 204:	d1 bd       	out	0x21, r29	; 33
+		wdt_reset()
+		do the thing
+		wdt_disable();
+		*/
+		wdt_enable(WDTO_2S);
+		wdt_reset();
+ 206:	0f be       	out	0x3f, r0	; 63
+		f();
+ 208:	c1 bd       	out	0x21, r28	; 33
+ 20a:	a8 95       	wdr
+void wdt_disable (void)
+{
+	if (_SFR_IO_REG_P (_WD_CONTROL_REG))
+	{
+        uint8_t register temp_reg;
+		__asm__ __volatile__ (
+ 20c:	cb df       	rcall	.-106    	; 0x1a4 <f>
+ 20e:	0f b6       	in	r0, 0x3f	; 63
+ 210:	f8 94       	cli
+ 212:	a8 95       	wdr
+ 214:	81 b5       	in	r24, 0x21	; 33
+ 216:	88 61       	ori	r24, 0x18	; 24
+		
+		
+		wdt_disable();
+		timer_wait_reset(); // waits if the time is less than 2 sec always the last line of the loop where the time has to be checked
+ 218:	81 bd       	out	0x21, r24	; 33
+ 21a:	11 bc       	out	0x21, r1	; 33
+		transmit_UART0(0xff);
+ 21c:	0f be       	out	0x3f, r0	; 63
+ 21e:	13 d0       	rcall	.+38     	; 0x246 <timer_wait_reset>
+ 220:	8f ef       	ldi	r24, 0xFF	; 255
+ 222:	43 d0       	rcall	.+134    	; 0x2aa <transmit_UART0>
+ 224:	eb cf       	rjmp	.-42     	; 0x1fc <main+0x24>
+
+00000226 <timer_reset_two_sec>:
+__attribute__ ((__always_inline__))
+void wdt_enable (const uint8_t value)
+{
+	if (_SFR_IO_REG_P (_WD_CONTROL_REG))
+	{
+		__asm__ __volatile__ (
+ 226:	86 b7       	in	r24, 0x36	; 54
+ 228:	80 61       	ori	r24, 0x10	; 16
+ 22a:	86 bf       	out	0x36, r24	; 54
+ 22c:	1e bc       	out	0x2e, r1	; 46
+ 22e:	1d bc       	out	0x2d, r1	; 45
+ 230:	1c bc       	out	0x2c, r1	; 44
+ 232:	88 e0       	ldi	r24, 0x08	; 8
+ 234:	9d e3       	ldi	r25, 0x3D	; 61
+ 236:	9b bd       	out	0x2b, r25	; 43
+ 238:	8a bd       	out	0x2a, r24	; 42
+ 23a:	1f bc       	out	0x2f, r1	; 47
+ 23c:	85 e0       	ldi	r24, 0x05	; 5
+ 23e:	8e bd       	out	0x2e, r24	; 46
+ 240:	10 92 7a 00 	sts	0x007A, r1	; 0x80007a <__TEXT_REGION_LENGTH__+0x7e007a>
+ 244:	08 95       	ret
+
+00000246 <timer_wait_reset>:
+  wdt_enable(time);
+}
+
+void timer_wait_reset(void){
+  ///* Return when timer>2 seconds.
+  while(!(TIFR & _BV(OCF1A)));
+ 246:	06 b6       	in	r0, 0x36	; 54
+ 248:	04 fe       	sbrs	r0, 4
+  ///* Restart timer
+  timer_reset_two_sec();  
+ 24a:	fd cf       	rjmp	.-6      	; 0x246 <timer_wait_reset>
+ 24c:	ec cf       	rjmp	.-40     	; 0x226 <timer_reset_two_sec>
+ 24e:	08 95       	ret
+
+00000250 <init_UART0>:
+    	while ( !(UCSR1A & (_BV(UDRE1))) );
+    	///* Start transmission
+    	UDR1 = buffer[i];
+		i++;	
+	}
+}
+ 250:	1b b8       	out	0x0b, r1	; 11
+ 252:	1a b8       	out	0x0a, r1	; 10
+ 254:	e5 e9       	ldi	r30, 0x95	; 149
+ 256:	f0 e0       	ldi	r31, 0x00	; 0
+ 258:	10 82       	st	Z, r1
+ 25a:	59 9a       	sbi	0x0b, 1	; 11
+ 25c:	8a b1       	in	r24, 0x0a	; 10
+ 25e:	88 69       	ori	r24, 0x98	; 152
+ 260:	8a b9       	out	0x0a, r24	; 10
+ 262:	80 81       	ld	r24, Z
+ 264:	8e 60       	ori	r24, 0x0E	; 14
+ 266:	80 83       	st	Z, r24
+ 268:	87 e6       	ldi	r24, 0x67	; 103
+ 26a:	89 b9       	out	0x09, r24	; 9
+ 26c:	10 92 90 00 	sts	0x0090, r1	; 0x800090 <__TEXT_REGION_LENGTH__+0x7e0090>
+ 270:	08 95       	ret
+
+00000272 <init_UART1>:
+ 272:	cf 93       	push	r28
+ 274:	df 93       	push	r29
+ 276:	cb e9       	ldi	r28, 0x9B	; 155
+ 278:	d0 e0       	ldi	r29, 0x00	; 0
+ 27a:	18 82       	st	Y, r1
+ 27c:	aa e9       	ldi	r26, 0x9A	; 154
+ 27e:	b0 e0       	ldi	r27, 0x00	; 0
+ 280:	1c 92       	st	X, r1
+ 282:	ed e9       	ldi	r30, 0x9D	; 157
+ 284:	f0 e0       	ldi	r31, 0x00	; 0
+ 286:	10 82       	st	Z, r1
+ 288:	88 81       	ld	r24, Y
+ 28a:	82 60       	ori	r24, 0x02	; 2
+ 28c:	88 83       	st	Y, r24
+ 28e:	8c 91       	ld	r24, X
+ 290:	88 69       	ori	r24, 0x98	; 152
+ 292:	8c 93       	st	X, r24
+ 294:	80 81       	ld	r24, Z
+ 296:	8e 60       	ori	r24, 0x0E	; 14
+ 298:	80 83       	st	Z, r24
+ 29a:	87 e6       	ldi	r24, 0x67	; 103
+ 29c:	80 93 99 00 	sts	0x0099, r24	; 0x800099 <__TEXT_REGION_LENGTH__+0x7e0099>
+ 2a0:	10 92 98 00 	sts	0x0098, r1	; 0x800098 <__TEXT_REGION_LENGTH__+0x7e0098>
+ 2a4:	df 91       	pop	r29
+ 2a6:	cf 91       	pop	r28
+ 2a8:	08 95       	ret
+
+000002aa <transmit_UART0>:
+ 2aa:	5d 9b       	sbis	0x0b, 5	; 11
+ 2ac:	fe cf       	rjmp	.-4      	; 0x2aa <transmit_UART0>
+ 2ae:	8c b9       	out	0x0c, r24	; 12
+ 2b0:	08 95       	ret
+
+000002b2 <transmit_string_UART0>:
+
+
+void transmit_string_UART0(char *buffer)
+{
+ 2b2:	fc 01       	movw	r30, r24
+  	uint16_t i = 0;
+  	///Loop through the data
+  	while(buffer[i] != '\0')
+ 2b4:	90 81       	ld	r25, Z
+ 2b6:	99 23       	and	r25, r25
+ 2b8:	39 f0       	breq	.+14     	; 0x2c8 <transmit_string_UART0+0x16>
+ 2ba:	31 96       	adiw	r30, 0x01	; 1
+  	{
+    	///* Wait for empty transmit buffer 
+    	while ( !(UCSR0A & (_BV(UDRE0))) );
+ 2bc:	5d 9b       	sbis	0x0b, 5	; 11
+ 2be:	fe cf       	rjmp	.-4      	; 0x2bc <transmit_string_UART0+0xa>
+    	///* Start transmission
+    	UDR0 = buffer[i];
+ 2c0:	9c b9       	out	0x0c, r25	; 12
+
+void transmit_string_UART0(char *buffer)
+{
+  	uint16_t i = 0;
+  	///Loop through the data
+  	while(buffer[i] != '\0')
+ 2c2:	91 91       	ld	r25, Z+
+ 2c4:	91 11       	cpse	r25, r1
+ 2c6:	fa cf       	rjmp	.-12     	; 0x2bc <transmit_string_UART0+0xa>
+ 2c8:	08 95       	ret
+
+000002ca <_exit>:
+ 2ca:	f8 94       	cli
+
+000002cc <__stop_program>:
+ 2cc:	ff cf       	rjmp	.-2      	; 0x2cc <__stop_program>
