@@ -13,6 +13,12 @@ We use UART1 because in Pratham's case UART1 of the OBC was connected to the Mag
 1. **Polling** :- Poll magnetometer for data.
 2. **Storage** :- Store the data received from the magnetometer.
 3. **Processing** :- Process the data.
+
+## Header files
+common.h , i2c.h , led_tests.h , spi.h , timer.h , uart.h
+
+**mag.h** contains all the functions related to magmeter
+
 ## Functions Used
 1.**Polling** - To poll the magnetometer I have defined mag_poll() whose implementation is as following :-
 ```C
