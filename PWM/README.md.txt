@@ -1,0 +1,1 @@
+http://maxembedded.com/2011/08/avr-timers-pwm-mode-part-i/
