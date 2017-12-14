@@ -21,7 +21,7 @@ Everything  is  controlled  by  on-board  computer.  It  processes  commands  re
 ### OBC Architecture
 In PW-sat2 2 different redundant microcontrollers were used of which first microcontroller iss the main one which provides completer functionality of the satellite nd second one is reserve microcontroller is reserve one which provides partial functionality of satellite. It has the advantage that as both the microcontrollers have different rate of degradation probability of both getting degraded at same time is less.
 
-//Add flowchart
+![alt text](https://github.com/singhalanirudh18/advitaya/blob/master/images/2_microcontroller.png)
 
 ### Memory Blocks
 #### Images for camera
@@ -30,8 +30,7 @@ For this purpose **NOR flash memory** was used because in NOR Flash we have dire
 #### System settings
 System settings will be stored in **FRAM memory** because they provide higher resistance from ionizing radiation. In order to boost the reliability two identical memory blocks can be used for settings data
 saving. Both blocks would have the same data, just like in RAID 1 hard disks array.
-
-//Add Image
+![alt text](https://github.com/singhalanirudh18/advitaya/blob/master/images/RAID_1.png)
 
 #### Memory for holding results of current tasks
 SRAM will be used for this task
@@ -40,8 +39,8 @@ SRAM will be used for this task
 Measurement data Voltages and currents of various components. During each communication session measurements data was sent to Earth. **NAND Ram** was used for this purpose
 .
 ### General Block Diagram of OBC Architecture
+![alt text](https://github.com/singhalanirudh18/advitaya/blob/master/images/Block_diagram.png)
 
-//Add Image
 
 #### Microcontroller 0 – OBC0
 
